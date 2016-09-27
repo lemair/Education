@@ -15,7 +15,7 @@ var config = {
     publicDir: './app',
 };
 
-gulp.task('browser-sync', ['styles', 'scripts'], function() {
+gulp.task('browser-sync', ['styles'], function() {
     var browserSync = require('browser-sync').create();
     browserSync.init({
         server: {
@@ -43,7 +43,7 @@ gulp.task('styles', function () {
 });
 
 gulp.task('watch', function () {
-    gulp.watch(['src/sass/*.sass', 'app/sass/**/*.sass',], ['styles']);
+   gulp.watch(['src/sass/*.sass', 'src/sass/**/*.sass', 'src/sass/**/*.scss' ], ['styles']); 
 });
 
-gulp.task('default', ['watch']);
+gulp.task('default', [ 'browser-sync', 'watch']);
