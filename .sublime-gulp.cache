@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"D:\\Git\\Education\\gulpfile.js":{"sha1":"4481f8d9ade8c093844b723efe9c6761caf359fe","tasks":{"browser-sync":{"name":"browser-sync","dependencies":"styles"},"styles":{"name":"styles","dependencies":""},"watch":{"name":"watch","dependencies":""},"default":{"name":"default","dependencies":"browser-sync watch"}}},"C:\\Users\\User\\Desktop\\Git\\Education\\gulpfile.js":{"sha1":"4481f8d9ade8c093844b723efe9c6761caf359fe","tasks":{"browser-sync":{"name":"browser-sync","dependencies":"styles"},"styles":{"name":"styles","dependencies":""},"watch":{"name":"watch","dependencies":""},"default":{"name":"default","dependencies":"browser-sync watch"}}}}
+=======
+{"D:\\Git\\Education\\gulpfile.js":{"sha1":"4481f8d9ade8c093844b723efe9c6761caf359fe","tasks":{"browser-sync":{"name":"browser-sync","dependencies":"styles"},"styles":{"name":"styles","dependencies":""},"watch":{"name":"watch","dependencies":""},"default":{"name":"default","dependencies":"browser-sync watch"}}}}
+>>>>>>> origin/master

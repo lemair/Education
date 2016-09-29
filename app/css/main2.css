@@ -2740,7 +2740,10 @@ input[type="button"].btn-block {
   display: block; }
 
 nav nav-inline {
+<<<<<<< HEAD
   background-color: #fff;
+=======
+>>>>>>> origin/master
   opacity: 0.3; }
 
 .navbar {
@@ -4700,6 +4703,7 @@ a.text-danger:focus, a.text-danger:hover {
   .hidden-print {
     display: none !important; } }
 
+<<<<<<< HEAD
 body {
   margin: o; }
 
@@ -4707,12 +4711,21 @@ header {
   min-height: 750px;
   background: url(../img/top-bg.jpg) center;
     background-position: fixed; }
+=======
+header {
+  min-height: 670px;
+  background: url(../img/top-bg.jpg) center; }
+>>>>>>> origin/master
 
 .navbar {
   background-color: transparent; }
 
 .navbar-brand {
+<<<<<<< HEAD
   margin-top: 14px; }
+=======
+  margin-top: 10px; }
+>>>>>>> origin/master
 
 .nav .nav-link {
   color: #fff;
@@ -4720,6 +4733,7 @@ header {
 
 .nav .nav-link:hover {
   border: 1px solid #fff;
+<<<<<<< HEAD
   border-radius: 25px;
   position: fixed; }
 
@@ -4734,3 +4748,9 @@ header {
 .lead {
   text-align: center;
   color: #fff; }
+=======
+  border-radius: 45px; }
+
+.content {
+  text-align: center; }
+>>>>>>> origin/master
