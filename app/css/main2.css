@@ -3334,6 +3334,22 @@ a.tag:focus, a.tag:hover {
   padding-left: 0;
   border-radius: 0; }
 
+.jumbotron {
+  padding-bottom: 50px;
+  background-color: transparent; }
+  .jumbotron .display-3 {
+    text-align: center;
+    color: #fff; }
+
+.lead {
+  text-align: center;
+  color: #fff; }
+
+.jumbotron-text {
+  text-align: center;
+  position: relative;
+  padding: 107px; }
+
 .alert {
   padding: 15px;
   margin-bottom: 1rem;
@@ -4720,15 +4736,5 @@ header {
   min-height: 670px;
   background: url(../img/top-bg.jpg) center;
     background-width: 100%; }
-
-.jumbotron {
-  padding-bottom: 50px;
-  background-color: transparent; }
-
-.display-3 {
-  text-align: center;
-  color: #fff; }
-
-.lead {
-  text-align: center;
-  color: #fff; }
+  header section {
+    padding: 30px; }

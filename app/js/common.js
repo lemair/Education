@@ -38,3 +38,17 @@ $(function() {
 	$("img, a").on("dragstart", function(event) { event.preventDefault(); });
 
 });
+
+$(window).scroll(function() {
+
+var st = $(this).scrollTop();
+
+$(".navbar-brand, .nav navbar-nav").css({
+"transform" : "translate(0%," + st +"%"
+});
+
+$(".sect_2").css({
+"transform" : "translate(0%,-" + st/20 +"%"
+});
+
+});
