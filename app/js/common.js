@@ -43,7 +43,7 @@ $(window).scroll(function() {
 
 var st = $(this).scrollTop();
 
-$(".navbar-brand, .nav navbar-nav").css({
+$(".navbar-brand, .navbar-navbar-light-bg-faded").css({
 "transform" : "translate(0%," + st +"%"
 });
 
@@ -51,4 +51,10 @@ $(".sect_2").css({
 "transform" : "translate(0%,-" + st/20 +"%"
 });
 
+});
+$(function() {
+	$('a[href*=#]').on('click', function(e) {
+		e.preventDefault();
+		$('header, section').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+	});
 });

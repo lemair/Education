@@ -2123,8 +2123,14 @@ input[type="reset"].btn-block,
 input[type="button"].btn-block {
   width: 100%; }
 
-.navbar-toggler {
-  margin-top: 4px; }
+.btn-read {
+  font-family: "Open Sans Regular", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 35px;
+  border-color: #333b46;
+  color: #333b46;
+  margin-left: 85px; }
 
 /** Bootstrap **/
 .fade {
@@ -3485,12 +3491,8 @@ a.tag:focus, a.tag:hover {
 .jumbotron {
   background-color: transparent; }
 
-.jumbotron-img {
-  padding: 76px; }
-
 .jumbotron-slang {
-  text-align: center;
-    text-align-text-color: #fff; }
+  text-align: center; }
 
 .alert {
   padding: 0.75rem 1.25rem;
@@ -4931,8 +4933,14 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
     display: none !important; } }
 
 header {
-  min-height: 670px;
-  background: url(../img/top-bg.jpg) center;
-    background-width: 100%; }
-  header section .display-3 {
-    color: #fff; }
+  background-position: center;
+  background-image: url(..//img/top-bg.jpg);
+  min-height: 600px;
+  background-size: cover;
+  box-shadow: 0 0 0 500px rgba(0, 0, 0, 0.33) inset; }
+
+.lead {
+  color: white; }
+
+.Code {
+  color: white; }
