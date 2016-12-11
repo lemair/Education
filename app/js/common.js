@@ -53,7 +53,7 @@ $(".sect_2").css({
 
 });
 $(function() {
-	$('a[href*=#]').on('click', function(e) {
+	$('.scroll-down').on('click', function(e) {
 		e.preventDefault();
 		$('header, section').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
 	});
