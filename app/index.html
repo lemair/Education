@@ -18,7 +18,8 @@
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jq.." ></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+	</script>
 
 	<!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
 	<script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n}function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
@@ -39,118 +40,174 @@
 
 <script type="text/javascript">
 $(document).ready(function(){
-
-//Check to see if the window is top if not then display button
-$(window).scroll(function(){
-if ($(this).scrollToTop() > 100) {
-$('.scrollToDown').fadeIn();
-} else {
-$('.scrollToDown').fadeOut();
-}
+	
+	//Check to see if the window is top if not then display button
+	$(window).scroll(function(){
+		if ($(this).scrollToTop() > 100) {
+			$('.scrollToDown').fadeIn();
+		} else {
+			$('.scrollToDown').fadeOut();
+		}
+	});
+	
+	//Click event to scroll to top
+	$('.scrollToDown').click(function(){
+		$('html, body').animate({scrollTop : 600},800);
+		return false;
+	});
+	
 });
+</script> 
 
-//Click event to scroll to top
-$('.scrollToDown').click(function(){
-$('html, body').animate({scrollTop : 600},800);
-return false;
-});
 
-});
-</script>
 <body>
-<header class="main">
+<header class="main-head">
 <div class="container">
-<button class="navbar-toggler hidden-md-up  " type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header">&#9776;</button>
-			<div class="collapse navbar-toggleable-xs " id="navbar-header">
-<nav class="navbar-navbar-light-bg-faded ">
-<a class="navbar-brand" href="#"> <img src="img/logo.png" alt=""></a>
-  <div class="nav navbar-nav float-md-right">
-        <a class="nav-item nav-link " href="#">Home</a>
-        <a class="nav-item nav-link" href="#">About</a>
-        <a class="nav-item nav-link" href="#">Services</a>
-        <a class="nav-item nav-link" href="#">Portfolio</a>
-        <a class="nav-item nav-link" href="#">Team</a>
-        <a class="nav-item nav-link" href="#">Blog</a>
-        <a class="nav-item nav-link" href="#">Contact</a>
-</nav>
-</div>
-</div>
-<div class="container">
-<div class="row">
-<h1 class="h1-disp text-md-center text-uppercase">We Are Code Cafe</h1>
-<br>
-<p class="p-h1-d text-md-center">
-At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-<br>praesentium voluptatum</p>
-<p class="lead text-md-center">
-<i class="material-icons button-1 scrollToDown" id="scrollToTop" role="button" href="#">keyboard_arrow_down</i>
-</p>
-</div>
-</div>
-
-	</header>
-
-<section class="white">
-    <div class="col-md-6">
-	<div class="jumbotron text-md-center"> <h1 class="logo">This is Bouncy</h1><br>
-	<p class="defice text-md-center">At vero eos et accusamus et iusto odio dignissimos ducimus qui<br> blanditiis praesentium voluptatum deleniti atque corrupti quos<br> dolores et quas molestias excepturi sint occaecati cupiditate non<br> provident, similique sunt in culpa qui officia deserunt mollitia<br> animi, id est laborum et dolorum fuga. Et harum quidem rerum<br> facilis est et expedita distinctio.</p>
-<button type="button" class="btn btn-read " href="#" role="button" >Read More</button>
-	</div>
-	
-	</div>
-	</div>
-	
-	<div class="col-md-6">
-	<div class="jumbotron-img text-md-center ">
-	<br>
-	<br>
-		<img src="img/IPAD.jpg">
-	</div>
-</section>
-<div class="col-md-12">
-<section class="details">
-<div class="jumbotron ">
-<div class=" text-md-center">
-	 <h2 class="about text-md-center text-uppercase">DetailS ABOUT BOUNCY</h2>
-	 <br>
-	  <p class="Lead text-md-center">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium <br>voluptatum </p>
-	  <br>
-	  <br>
-	 <div class="container">
-<div class="row">
-<div class="block-icons text-md-center ">
-<p class="icons text-md-center"> <i class="material-icons heart-1" role="button" href="#">favorite_border</i>
-</p>
-<p class="icons text-md-center"> <i class="material-icons bulb-1" role="button" href="#">lightbulb_outline</i>
-</p>
-<p class="icons text-md-center">
-<i class="material-icons mouse-1" role="button" href="#">mouse</i>
-</p>
-</div>
-</div>
-</div>
-<br>
-<br>
-<br>
-<h3 class="ideas float-md-left">Creative Ideas</h3><br><br><br>
-<p class="tex float-md-left">At <p class="green float-md-left">vero</p>eos et accusamus et iusto odio<br> dignissimos <b>ducimus</b> qui blanditiis<br> praesentium voluptatum deleniti atque<br> corrupti quos dolores</p>
-      </div>
+		<button class="navbar-toggler hidden-md-up" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header">&#9776;</button>
+			<div class="collapse navbar-toggleable-xs" id="navbar-header">
+			<nav class="navbar">
+			<a class="navbar-brand" href="#">
+				<img src="img/logo.png" alt=""></a>
+			<div class="nav navbar-nav float-md-right">
+				<a class="nav-item nav-link active" href="#">Home</a>
+				<a class="nav-item nav-link active" href="#">About</a>
+				<a class="nav-item nav-link" href="#">Services</a>
+				<a class="nav-item nav-link" href="#">Portfolio</a>
+				<a class="nav-item nav-link" href="#">Team</a>
+				<a class="nav-item nav-link" href="#">Blog</a>
+				<a class="nav-item nav-link" href="#">Contact</a>
+			</div>
+		</nav>
 		</div>
-	 	</div>
-	 	</div>
+	</div>
+<div class="container">
+	<div class="row">
+		<h1 class="h1-disp text-md-center text-uppercase">We Are Code Cafe</h1>
+		<br>
+		<p class="p-h1-d text-md-center">
+			At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+			<br>praesentium voluptatum</p>
+			<p class="lead text-md-center">
+			<i class="material-icons button-1 scrollToDown" id="scrollToTop" role="button" href="#">keyboard_arrow_down</i>
+			</p>
+	</div>
+</div>
+	</header>
+<div class="container">
+<div class="block col-lg-6">
+	<div class="row">
+	<br><br>
+		<h3 class="Weare m-t-3 text-uppercase ">This is Bouncy</h3>
+		<br>
+		<p class="defice">
+			At vero eos et accusamus et iusto odio dignissimos ducimus qui
+			<br>
+			blanditiis praesentium voluptatum deleniti atque corrupti quos
+			<br>
+			dolores et quas molestias excepturi sint occaecati cupiditate non
+			<br>
+			provident, similique sunt in culpa qui officia deserunt mollitia
+			<br>
+			animi, id est laborum et dolorum fuga. Et harum quidem rerum
+			<br>facilis est et expedita distinctio.</p>
+	</div>
+	<button type="button" class="btn btn-read " href="#" role="button" >Read More</button>
+</div>
+<div class="img col-lg-6 text-md-center">
+	<img src="img/IPAD.jpg" class="m-x-auto ipad img-fluid  m-t-3"></div>
+</div>
+<br>
+<br>
+<br>
+<section class="details">
+<div class="container">
+	<div class="row">
+		<div class="block-icons text-md-center ">
+		<br>
+		<br>
+		<br>
+		<h3 class="about text-md-center text-uppercase m-t-3">DetailS ABOUT BOUNCY</h3>
+		<br>		
+		<p class="Lead text-md-center">
+			At vero eos et accusamus et iusto odio dignissimos ducimus qui <br> blanditiis praesentium
+			</p>
+			<br><br>
+			<p class="icons text-md-center"> <i class="material-icons heart-1" role="button" href="#">favorite_border</i>
+			</p>
+			<p class="icons text-md-center"> <i class="material-icons bulb-1" role="button" href="#">mouse</i>
+			</p>
+			<p class="icons text-md-center">
+				<i class="material-icons mouse-1" role="button" href="#"> lightbulb_outline</i>
+			</p>
+		</div>
+	</div>
+</div>
+<br><br>
+<div class="container">
+	<div class="block col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12 m-t-3">
+		<div class="row">
+			<h3 class="ideas ">Creative Ideas</h3>
+			<br><br>	
+			<p class="tex">
+				At <b><font color="#19bd9a">vero</font></b> 
+				eos et accusamus et iusto odio
+				<br>
+				dignissimos <b><font color="grey">ducimus</font></b> 
+				qui blanditiis
+				<br>
+				praesentium voluptatum deleniti atque
+				<br>corrupti quos dolores</p>
+		</div>
+	</div>
+	<div class="block col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12 m-t-3">
+		<h3 class="ideas ">
+			<br></h3>
+		<p class="tex-1 text-justify">
+			At vero eos et accusamus et iusto odio dignissimos ducimus qui blan- ditiis praesentium voluptatum deleniti atque
+			<b>
+				<font color="grey">corrupti quos</font>
+			</b>
+			dolores et quas molestias
+			<b>
+				<font color="#19bd9a">excepturi</font>
+			</b>
+			sint occaecati cupiditate non provident,
+			<b>
+				<font color="grey">simi-lique</font>
+			</b>
+			sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem r
+		</p>
+	</div>
+</div>
+<br>
 </section>
-
-
-
-	<!--[if lt IE 9]>
-	<script src="libs/html5shiv/es5-shim.min.js"></script>
-	<script src="libs/html5shiv/html5shiv.min.js"></script>
-	<script src="libs/html5shiv/html5shiv-printshiv.min.js
-	"></script>
-	<script src="libs/respond/respond.min.js"></script>
-	<![endif]-->
-
-	<!-- Load Scripts Start -->
+<section class="projects">
+<div class="container">
+<div class="row">
+	<br><br><br>
+	<br>
+	<br>
+	<h3 class="featured text-md-center">FEAUTURED PROJECTS</h3>
+	<br><br>
+	<p class="string text-md-center">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis<br> praesentium</p>
+     
+	</div>
+	</div>
+	<br><br>
+	<jumbotron class="slideshow">
+	<div class="mySlides">
+		<img src="img/whiski.jpg">
+		<div class="slideshow-1">
+		<img class="mySlides" src="img/whiski-sl.jpg">
+		<img class="mySlides" src="img/pages.jpg">
+		</div>
+		<div class="slideshow-2">
+		<img class="mySlides" src="img/books.jpg">
+		<img class="mySlides" src="img/tag.jpg">
+		</div>
+		</div>
+	</jumbotron>
+</section>
 	<script>var scr = {"scripts":[
 		{"src" : "js/libs.js", "async" : false},
 		{"src" : "js/common.js", "async" : false}
