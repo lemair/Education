@@ -42,8 +42,10 @@ gulp.task('styles', function () {
     //.pipe(browserSync.stream());
 });
 
+
 gulp.task('watch', function () {
-   gulp.watch(['src/sass/*.sass', 'src/sass/**/*.sass', 'src/sass/**/*.scss' ], ['styles']); 
+gulp.watch(['src/sass/*.sass', 'src/sass/**/*.sass', 'src/sass/**/*.scss' ], ['styles']);
 });
 
+gulp.task('default', ['watch']);
 gulp.task('default', [ 'browser-sync', 'watch']);
