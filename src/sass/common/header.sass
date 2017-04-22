@@ -1,59 +1,67 @@
-@import "vars.sass"
-@import "colors.sass"
+.main-head
+	background-color: #bbb
+  line-height: 2
+  background: #ffffff none repeat scroll 0 0
+
+.call-us p
+  color: #ffffff
+  font-weight: 500
+  line-height: 40px
+  text-align: center
+  display: inline
+  margin: 0 0 10px
+
+/*top-link*/
+
+.top-link > ul.link
+		margin: 0 0 10px
+  > li
+    float: left
+    position: relative
+    list-style: none
+    display: inline
+
+    &::before
+      background: #ffffff none repeat scroll 0 0
+      content: ""
+      height: 15px
+      left: 0
+      position: absolute
+      top: 13px
+      width: 1px
+    &:first-child::before
+      display: none
+    a
+      color: #ffffff
+      display: block
+      font-size: 0
+      height: 40px
+      line-height: 30px
+      overflow: hidden
+      padding: 10px 20px
+      text-align: center
+      text-transform: capitalize
+      white-space: nowrap
+      width: 50px
+      list-style: none
+      text-decoration: none
+      i
+        font-size: 15px
+        line-height: 10px
+        color: #ffffff
+        list-style: none
+      &:hover
+        i
+        padding-right: 5px
+        color: #fff
+        font-size: 14px
+        line-height: 19px
+        width: auto
+
+      &:focus, &:active
+        color: #fff
+        font-size: 13px
+        line-height: 19px
+        width: auto
 
 
-
-header
-	background-position: center
-	background-image: url(..//img/top-bg.jpg)
-	min-height: 600px
-	background-size: cover
-	box-shadow: 0 0 0 500px rgba(0, 0, 0, 0.33) inset
-
-
-.lead
-    color: $wh
-.Code
-    color: $wh
-.details
-    background-color: #f3f3f3
-.heart-1
-	font-size: 30px
-	color: white
-	background-color: #81868e
-	border-radius: 90px
-	height: 40px
-	width: 40px
-	line-height: 1.4
-.heart-1:hover
-	background-color: #19bd9a
-     transition: 0.5s
-.bulb-1
-	font-size: 30px
-	color: white
-	background-color: #81868e
-	border-radius: 90px
-	height: 40px
-	width: 40px
-	line-height: 1.4
-.bulb-1:hover
-	background-color: #19bd9a
-     transition: 0.5s
-.mouse-1
-	font-size: 30px
-	color: white
-	background-color: #81868e
-	border-radius: 90px
-	height: 40px
-	width: 40px
-	line-height: 1.4
-.mouse-1:hover
-	background-color: #19bd9a
-    transition: 0.5s
-.icons
-	display: initial
-	padding: 10px
-.green
-	display: inline
-	padding: 3px
-	color: #7dd0bb
