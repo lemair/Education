@@ -4075,6 +4075,11 @@ a:hover {
   .call-us {
     display: none; } }
 
+@media screen and (max-width: 767px) and (min-width: 768px) {
+  /* half-width cells for larger devices*/
+  .gallery-cell {
+    width: 50%; } }
+
 .list-group {
   padding-left: 0;
   margin-bottom: 0; }
@@ -4756,15 +4761,16 @@ button.close {
   .carousel-indicators {
     bottom: 20px; } }
 
-.slide-image .H1 {
-  display: block;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
-  text-transform: uppercase;
-  position: relative;
-  top: 20%;
-  font-size: 5rem;
-  margin-top: 0;
-  margin-bottom: 30px; }
+.welcome {
+  position: absolute;
+  text-align: center;
+  top: 0;
+  left: 0;
+  background: #fff;
+  color: #000; }
+
+.prev {
+  color: #000; }
 
 /** Bootstrap **/
 .bg-inverse {
