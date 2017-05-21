@@ -1,0 +1,264 @@
+/*=========================================
+ *  11. Cart Page
+ *==========================================
+/* -------------------------------------
+ *    11.1 Cart option
+ *-------------------------------------*/
+
+.cart-tab li
+  display: block
+  margin-bottom: 100px
+  position: relative
+  text-align: center
+  &::before
+    background: #ddd none repeat scroll 0 0
+    content: ""
+    height: 40px
+    left: 0
+    margin: auto
+    position: absolute
+    right: 0
+    top: 130%
+    width: 2px
+  &:last-child
+    margin-bottom: 0
+    &::before
+      display: none
+  a
+    color: #999999
+    display: block
+    font-size: 13px
+    font-weight: 600
+    text-transform: uppercase
+    span
+      border-radius: 50%
+      box-shadow: 0 0 4px rgba(0, 0, 0, 0.1)
+      display: block
+      font-family: roboto
+      font-size: 20px
+      font-weight: 500
+      height: 50px
+      line-height: 50px
+      margin: auto auto 20px
+      text-align: center
+      width: 50px
+    &.active
+      color: #ff7f00
+      span
+        box-shadow: 0 0 4px rgba(255, 127, 0, 0.1)
+        border: 1px solid #ff7f00
+
+/* -------------------------------------
+ *    11.2 Cart table content
+ *-------------------------------------*/
+
+.table-content table
+  border: 1px solid #eee
+  border-collapse: collapse
+  th, td
+    border: 1px solid #eee
+    border-collapse: collapse
+
+table
+  width: 100%
+
+.table-content table
+  thead th
+    color: #666666
+    font-family: raleway
+    font-size: 13px
+    font-weight: 600
+    line-height: 1
+    padding: 18px 0
+    text-align: center
+    text-transform: uppercase
+  tr td
+    color: #999
+    padding: 20px 30px
+
+.product-thumbnail
+  width: 420px
+
+.pro-thumbnail-img
+  float: left
+  width: 28%
+  img
+    width: 100%
+
+.pro-thumbnail-info
+  float: left
+  padding-left: 20px
+  width: 72%
+
+.product-title-2
+  color: #666666
+  font-weight: 500
+  margin-top: 15px
+  overflow: hidden
+  text-overflow: ellipsis
+  text-transform: uppercase
+  white-space: nowrap
+
+.pro-thumbnail-info > p
+  margin-bottom: 0
+
+.product-price, .product-subtotal
+  font-family: roboto
+  font-size: 16px
+  font-weight: 700
+
+.product-remove a
+  color: #999
+  display: block
+  font-size: 18px
+  height: 20px
+  line-height: 20px
+  transition: all 0.3s ease 0s
+  width: 20px
+  &:hover
+    color: #ff7f00
+
+.product-stock
+  font-weight: 600
+  text-transform: uppercase
+
+.product-add-cart a
+  color: #999
+  font-size: 25px
+  &:hover
+    color: #ff7f00
+
+/* -------------------------------------
+ *    11.2 Coupon-discount
+ *-------------------------------------*/
+
+.coupon-discount input
+  margin-bottom: 28.5px
+
+/* -------------------------------------
+ *    11.3 Payment-details
+ *-------------------------------------*/
+
+.payment-details
+  tr
+    border-bottom: 1px solid #eee
+    &:last-child
+      border-bottom: 0 none
+  td
+    padding: 5px 0
+
+.td-title-1
+  color: #999
+  font-size: 13px
+  text-align: left
+
+.td-title-2
+  color: #999
+  font-family: roboto
+  font-weight: 500
+  text-align: right
+
+.order-total
+  color: #ff7f00
+  font-weight: 500
+  text-align: left
+
+.order-total-price
+  color: #ff7f00
+  font-family: roboto
+  font-weight: 700
+  text-align: right
+
+/*custom-select*/
+
+.custom-select
+  -moz-appearance: none
+  -webkit-appearance: none
+  appearance: none
+  background: rgba(0, 0, 0, 0) url("img/icon/down-arrow.png") no-repeat scroll 97% center
+  border: medium none
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1)
+  height: 40px
+  margin-bottom: 20px
+  width: 100%
+  option
+    font-size: 13px
+    padding: 2px 0 0 20px
+
+.custom-textarea
+  height: 110px
+
+/* -------------------------------------
+ *    11.4 Payment-method
+ *-------------------------------------*/
+.payment-method .panel
+  border: medium none
+  border-radius: 0
+  box-shadow: none
+  margin-bottom: 0
+  padding-bottom: 20px
+
+.payment-content
+  padding: 20px 20px 0
+
+.payment-method .panel:last-child
+  padding-bottom: 0
+
+.payment-title
+  color: #666666
+  font-size: 13px
+  font-weight: 500
+  height: 40px
+  line-height: 40px
+  margin-bottom: 0
+  padding-left: 20px
+  text-transform: uppercase
+
+.payment-content > p
+  margin-bottom: 5px
+
+.payent-type li
+  display: inline-block
+  margin-right: 10px
+  &:last-child
+    margin-right: 0
+  a
+    border: 1px solid #e5e5e5
+    padding: 5px
+    display: block
+
+/* -------------------------------------
+ *    11.5 Order information
+ *-------------------------------------*/
+
+.order-info
+  border-bottom: 1px solid #eee
+  border-top: 1px solid #eee
+
+.order-info-list
+  text-transform: uppercase
+  text-align: center
+  li
+    border-right: 1px solid #eee
+    display: inline-block
+    padding: 0 35px
+    &:last-child
+      border-right: 0
+    h6
+      color: #666
+      font-weight: 500
+    p
+      font-family: roboto
+      margin-bottom: 0
+
+.bill-address
+  > li
+    color: #999999
+    display: block
+    font-size: 13px
+  li span
+    color: #666666
+    display: inline-block
+    font-weight: 500
+    text-transform: uppercase
+    width: 85px

@@ -21,3 +21,37 @@ $('.active-by-brand').slick({
 	{ breakpoint: 479, settings: { slidesToShow: 1 }  }
 	]
 });
+/*------------------------------------
+			4.6 Active Related Product
+	-------------------------------------- */
+    $('.active-related-product').slick({
+        speed: 700,
+        arrows: false,
+        dots: false,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        responsive: [
+            {  breakpoint: 991,   settings: { slidesToShow: 2,  }  },
+            {  breakpoint: 767,   settings: { slidesToShow: 1, }   },
+            {  breakpoint: 479,   settings: { slidesToShow: 1, }   },
+        ]
+    });
+    $(".cart-plus-minus").prepend('<div class="dec qtybutton">-</div>');
+    $(".cart-plus-minus").append('<div class="inc qtybutton">+</div>');
+    $(".qtybutton").on("click", function() {
+        var $button = $(this);
+        var oldValue = $button.parent().find("input").val();
+        if ($button.text() == "+") {
+            var newVal = parseFloat(oldValue) + 1;
+        } 
+        else {
+            // Don't allow decrementing below zero
+            if (oldValue > 0) {
+                var newVal = parseFloat(oldValue) - 1;
+            } 
+            else {
+                newVal = 0;
+            }
+        }
+        $button.parent().find("input").val(newVal);
+    });

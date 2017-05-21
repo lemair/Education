@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Вишиванки</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.3/css/bootstrap.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.3/css/bootstrap.min.css"> 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css"> 
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+	<!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
+	<script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n}function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
+
+	<!-- Load CSS Start -->
+	<script>loadLocalStorageCSS( "webfonts", "css/fonts.min.css?ver=1.0.0" );</script>
+	<script>loadCSS( "css/header.min.css?ver=1.0.0", false, "all" );</script>
+	<script>loadCSS( "css/main2.css", false, "all" );</script>
+	<!-- Load CSS End -->
+
+	<!-- Load CSS Compiled without JS -->
+	<noscript>
+		<link rel="stylesheet" href="css/fonts.min.css">
+		<link rel="stylesheet" href="css/main2.min.css">
+		
+	</noscript>
+
+</head>
+
+
+<body>	<header class="main-head">
+	<div class="container-fluid">
+		<div class="row">
+			<nav class="black navbar-inverse bg-inverse">
+				<div class="header-top-bar">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-sm-6 hidden-xs">
+								<div class="call-us  pull-sm-left pull-md-left pull-lg-left pull-xl-left ">
+									<p class="mb-0 roboto">(+88) 01234-567890</p>
+								</div>
+							</div>
+							<div class="col-sm-6 col-xs-12">
+								<div class="top-link clearfix">
+									<ul class="link pull-xs-left pull-sm-left pull-md-right pull-lg-right pull-xl-right">
+										<li>
+											<a href="my-account.html">
+												<i class="zmdi zmdi-account zmdi-hc-2x"></i>
+												Мій аккаунт
+											</a>
+										</li>
+										<li>
+											<a href="wishlist.html">
+												<span class="favorite">
+													<i class="zmdi zmdi-favorite zmdi-hc-2x"></i>
+													Список бажаного (0)
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="#" data-toggle="modal"  data-target="#loginModal" title="Login">
+												<i class="zmdi zmdi-lock zmdi-hc-2x"></i>
+												Ввійти
+											</a>
+										</li>
+										<li>
+											<a href="cart.html">
+												<i class="zmdi zmdi-shopping-cart zmdi-hc-2x"></i>
+												Корзина (0)
+											</a>   
+										</li>                        
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+			<div class="container">
+				<nav class="navbar navbar">
+					<div class="navbar-header">
+						<a class="navbar-brand " href="index.html">Hand made</a>
+					</div> 
+					<button class="navbar-toggler hidden-md-up pull-xs-right " type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
+						&#9776;
+					</button>
+					<div class="collapse navbar-toggleable-sm pull-sm-center" id="exCollapsingNavbar">
+						<ul class="nav navbar-nav  pull-xs-left pull-sm-left pull-md-right pull-lg-right pull-xl-right ">
+							<li class="nav-item active">
+								<a class="nav-link" href="index.html">Головна <span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Історія</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#footer">Контакти</a>
+							</li>
+							<li class="nav-item dropdown ">
+								<a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Аксесуари
+								</a>
+								<div class="dropdown-menu pull-xs-left" aria-labelledby="navbarDropdownMenuLink">
+									<a class="dropdown-item" href="#">Вишиті рушники</a>
+									<a class="dropdown-item" href="#">Вінки</a>
+									<a class="dropdown-item" href="#">Намисто</a>
+									<a class="dropdown-item" href="#">Пояси</a>
+									<a class="dropdown-item" href="#">Ляльки-мотанки</a>
+								</div>
+							</li>
+							<li class="nav-item dropdown ">
+								<a class="nav-link dropdown-toggle " href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Вишиванки
+								</a>
+								<div class="dropdown-menu pull-xs-left" aria-labelledby="navbarDropdownMenuLink">
+									<a class="dropdown-item" href="#">Для жінок</a>
+									<a class="dropdown-item" href="shop.html">Для чоловіків</a>
+									<a class="dropdown-item" href="#">Для дітей</a>
+								</div>
+							</li>
+							<form class="form-inline pull-xs-left pull-sm-left pull-md-right pull-lg-right pull-xl-right ">
+								<input class="form-control" type="text" placeholder="Пошук">
+								<button class="btn btn-outline-success pull-xs-left pull-sm-left pull-md-right pull-lg-right pull-xl-right " type="submit">Пошук</button>
+							</form>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<section class="content-history fluid">
+			<br>
+			<h3 class="text-md-center fluid">Українська вишиванка - завжди красиво та модно</h3>
+			<br>
+			<div class="text">>
+				<p style="text-align: right;"><strong>Збережемо наше майбутнє!</strong></p>
+				<p style="text-align: right;"><em>Краса врятує світ</em></p>
+				<p style="text-align: right;">Ф.М. Достоєвський</p>
+				</div
+				<h4>Українська вишиванка є найкращим та найдорогоціннішим подарунком чи сувеніром вже протягом дуже тривалого часу</h4>
+				<p><img style="float: right;" src="img/history.jpg" alt="" width="192" height="257" border="0"></p>
+				<p>Слава нашого національно мистецтва виходить далеко за межі України та інших слов’янських країн. Справжня колоритна барвиста українська сорочка, зроблена з льону й вишита вручну, оздоблена національними орнаментами та виконана різноманітними техніками вишивання, втілює всю родючість української землі та щедрість і гостинність українського народу.</p>
+				<p>Вишивання сорочок з давніх давен органічно увійшло в життя народу, воно втілює в собі всі його естетичні принципи, ідеали добра та краси, прагнення до довершеного і витонченого.</p>
+				<p>Усім відомо, що вишивання є національним мистецтвом та ремеслом українців, звичайно, у залежності від регіону існують певні розбіжності у використанні елементів орнаментів, естетичності їх розташування, гами кольорів, а також у використанні певних технік.</p>
+				<p>Наш народ ставився до вишиванки як до святині. Вони передавалися з покоління в покоління, з роду в рід, береглися як реліквії. Символічний образ сорочки-вишиванки часто зустрічається в народних піснях. За традицією, дівчина, готуючи придане, мала власноруч вишити своєму нареченому сорочку.</p>
+				<p>Вишиванка — це символ здоров'я та краси, щасливої долі й родової пам'яті, порядності й чесності, любові та святковості; крім того, вишиванка – це ще й оберіг. Символіка вишивки залежала від того, кому призначалося вбрання: парубкові-нареченому, чоловікові чи хлопцеві; дівчині чи заміжній жінці.</p>
+				<p>Виготовлялися сорочки з лляного чи конопляного полотна домашньої роботи. Було чимало типів традиційних сорочок залежно від форми, використаних матеріалів, а також від семантики кольорів: подільський, галицький, поліський, волинський, наддніпрянський, полтавський, гуцульський, буковинський, лемківський тощо. Цікаво, що символіка вишиванок часто-густо збігається з символікою орнаментів предметів матеріальної трипільської культури. Виявлені на Черкащині срібні бляшки з фігурками чоловіків (датують їх VI ст.) ідентифікуються з візерунками вишиванок XVIII—XX ст. Щоправда, символіка вишивки часто складалася з двох частин: історичної (родової) і прогнозуючої (загадування майбутнього, продовження роду).</p>
+				<br>
+				<h4 class="text-md-center fluid">Історія вишивки: з глибини століть</h4>
+				<br>
+				<p><img style="float: right;" src="/img/history1.jpg" alt="" width="211" height="332" border="0"></p>
+				<p>Історія народної вишивки в Україні йде коренями в сиву глибину століть. Дані археологічних розкопок і свідчення мандрівників і літописців підтверджують, що вишивання як вид мистецтва тут існує з незапам'ятних часів. Вишивкою, за свідченням Геродота, був прикрашений ще одяг скіфів. Знайдені на Черкащині срібні бляшки з фігурками чоловіків, датовані VІ ст., при дослідженні показали ідентичність не тільки з одягом, але і з вишивкою українського народного костюма XVІІІ-XІX ст. Арабський мандрівник X ст. у своїх розповідях про русів згадує, що вони мали вишитий одяг. На жаль, пам'ятки української вишивки збереглися тільки за останні кілька століть, але навіть цього досить, щоб з'ясувати, що елементи символіки орнаментів української вишивки збігаються з орнаментами, які прикрашали посуд давніх жителів території України періоду неоліту, трипільської культури.</p>
+				<p>Вишиванням споконвіку займались жінки, які з покоління впокоління передавали найтиповіші, найяскравіші зразки орнаменту, кольору, вишивальну техніку. Вишивки, передаючи характерні ознаки місцевості, різняться між собою орнаментом, технікою виконання та гамою барв.<br><br>Протягом багатьох віків безпосередній конкретний зміст символів на вишивках втрачався, але традиції використання їх не зникли. За мотивами орнаменти вишивок поділяються на три групи : геометричні, рослинні, зооморфні (тваринні) й відображають елементи символіки стародавніх вірувань, культів.<br><br>Геометричні орнаменти, наприклад, притаманні всім видам народного мистецтва і всій слов`янській міфології. Різноманітні кружальця, трикутники, ромби, кривульки, лінії, хрести символічно відображали уявлення нашіх предків про світобудову, тож їхнє значення відповідне. На основі стародавніх космологічних символфів у народі створенна своя система назв. Це «баранячі ноги», «кучері», «гребінчики», «кривульки», «сосонка», «перерва» тощо.<br><br>В основі рослинного орнаменту лежить культ пок-лоніння природі, рослині. Крім поширеного символу «дерево життя», який зображається стилізовано у формі листя або гілок,у вишивках з рослинним орнаментом популярні стилізовані зображення Берегині, використання таких мотивів, як «виноград» - символ добробуту, щасливого одруження, «барвінок» - символ кохання тощо.<br><br>На зооморфних вишивках зображуються тотемічні й солярні тварини, а також звірі, що позначають три яруси «дерева життя». Інколи вишивальниці використовують індивідуальні мотиви, які властиві баченню візерунка певної особи. Ними можуть бути заячі та вовчі зуби, волове око, риб`яча луска тощо.<br><br>Полтавські вишивки виконуються хрестиком, плутаним хрестиком, подвійним прутиком, зубчиками, мережкою, ланцюжком тощо. Візерунки виконуються окремими швами і поєднанням кількох швів. Вишивають переважно білими нитками, зрідка - червоними та сірими, візерунок обводять чорними або кольоровими смугами.<br><br>Вишивкам Київщини властивий рослинно-геометричний орнамент із стилізованими гронами винограду, цвітом хмелю, ромбами, квадратами. Основні кольори білий, коралово-червоний, трапляється жовтий і голубий. Виконується вишивка хрестиком, знизуванням, гладдю.<br><br>Для вишивок Закарпаття характерний мотив «кривуля» у різних техніках виконання. Переважає техніка «заволікання» і вишивання хрестиком, часто використовується вирізування та гаптування. Кольорова гама вишивок широка червоне поєднується з чорним, при цьому виділяється один з кольорів ; поширені як білі, так і багатокольорові орнаменти.<br><br>Вишивкою оздоблювали рушники, фіранки, жіночий та чоловічий одяг. Особливої уваги надавали рушникам - старовинним оберегам дому, родини. У давнину рушник, вишитий відповідними візерункамисимволами, був неодмінним атрибутом багатьох обрядів : з рушником приходили до породіллі вшанувати появу нової людини, зустрічали, і проводжали дорогих гостей, справляли шлюбні обряди, проводжали в останню путь, прикрашали, образи та накривали хліб на столі. Крім обрядового значення, рушники мали і чисто практичне застосування. Відповідно до функцій,які вони виконували, рушники мали свої назви. Наприклад, для втирання обличчя і рук - утирач, посуду і стола - стирок, для прикрашення образів - покутник, для шлюбних церемоній - весільний, для похорон - поховальний, для пов`язування сватів - плечовий тощо. Рушники були своєрідною освятою по-чатку справи чи її закінчення, так, при зведенні хати рушниками застелялися підвалини, хлібом-сіллю на рушнику освячувався початок жнив, на рушниках опускалась домовина з небіжчиком, рушниками скріплювали купівлю-продаж тощо. Відповідно до призначення рушники розрізнялись за технікою виготовлення та вишивання. Кольори та орнамент рушників характерні регіональним особливостям, за якими розрізняються «подільські», «поліські», «київські», «гуцульські», «галицькі» і «буковинські».<br><br><br>Українська вишивка, рушники на перший погляд не мають ніякого значення в житті сучасної людини, але вони віють на серце кожного з нас чаром рідної стихії і є живущим бальзамом, який сповнює нас споконвічною могутньою силою українського народу.<br><br>Вишивка - класичний вид українського народного мистецтва, що розкриває невичерпне багатство творчих сил народу, вершини його мистецького хисту.<br><br>У процесі історичного та культурного розвитку на Україні у кожній місцевості утворились характерні орнаментальні мотиви і композиції, найбільш улюблена і поширена колірна гама, специфічні техніки виконання. Дбайливо передавалися вони з покоління в покоління, майстри відшліфовували кращі досягнення своїх попередників, розвиваючи і вдосконалюючи їх. Вишивкою займалися повсюди. Кожний район, навіть кожне село відзначалися своєрідністю мотивів. У розповсюджених орнаментальних мотивах, їх назвах вражає образна спостережливість, тонке поетичне почуття. Це "барвінок", "хмелик", "курячий брід", "зозулька", "гарбузове листя" та ін. Ось тому вишивка - це не тільки художнє оформлення речей, а й своєрідне світобачення відтворене специфічними художніми засобами.<br><br>В українській вишивці органічно співіснують рослинний і геометричний орнаменти. Геометричні мотиви, такі, як ромб, розетки, хрестоподібні фігури, стали основою східнослов'янського узору.<br><br>Найпоширенішим є мотив ромба, який набуває різноманітних окреслень. Ускладнюється не тільки внутрішній простір, а й зовнішній контур. Ромб - один з найпопулярніших мотивів вишивки Волині, Поділля, Гуцульщини. У вишивці у відповідності із застосованою технікою він дає різноманітний художній ефект.<br><br>У ХІХ ст. підвищення інтересу до рослинної орнаментації сприяють витісненню стародавніх композицій, новому їх переосмисленню. Велике художнє значення мали лінії крою, що їх майстрині не намагалися приховати, а навпаки, виявити за допомогою ажурних швів. Принцип поєднання ажурних швів типовий для всіх районів України, однак колористичне і технічне рішення різне в кожній місцевості.<br><br>У Київському і Чернігівському Поліссі поряд з геометричними популярне рослинно-геометричні мотиви в чорно-синій гамі. Улюбленими тут є "рожі", "берізки", "хміль", "барвінок", а також "гусячі лапки", "сливки".<br><br>На грані ХІХ-ХХ ст. відбувається кардинальна зміна художньо-образного вирішення народної вишивки. Пояснюється це поширенням техніки хрестика. Цією технікою вишивали в містах та панських маєтках, різноманітні предмети інтер'єрного призначення: панно, скатерки, серветки.<br><br>Класичною технікою Поділля є низь чорного і червоного кольорів, які мають стиль "лягання" густими насиченими лініями на полотно. Ця техніка виконується з вивороту, а на лиці, як на негативі має протилежний вигляд щодо розміщення кольорів.<br><br>Високим художньо-технічним рівнем виконання вирізняється вишивка багатонаціонального Закарпаття. Вони демонструють, як широту етнокультурних взаємовпливів, так і збереження традицій сивої давнини. Цей регіон відзначається різноманітністю технік виконання і колірної гами, застосуванням бісеру, стелярусу.<br><br>Особливу групу утворюють вироби Гуцульщини. Гуцульщина - історично-етнографічний край, що охоплює гірські райони Івано-Франківської та Чернівецької областей, та Рухівський район Закарпатської області.<br><br>Кожний район, навіть кожне село має своє художнє обличчя, улюблену колірну гаму. Так, у Яворові були "сливові", "черешневі", "соснові" мотиви, а найулюбленішими узорами залишалися "скриньковий" у вигляді ромбів або зигзагів, утворений прямокутними "скриньками", або ж малюнок "головкатий". Колорит ворівських вишивок червоний, який підсилено жовтим, зеленим та червоним. Поступово гама змінюється у бік багато барвистості, в ній переважають голубі, зелені, сині кольори, а у брусторівській - зелені, чорні.<br><br>Місцевою своєрідністю відзначаються вишивки гірського села Космач. Характерною прикметою є те, що вишивка виконується дрібним хрестиком, стібками, що утворюється завдяки гармонійному поєднанню ясних тонів - жовтого, оранжевого, темно-червоного кольорів, з незначним додаванням зеленого та чорного.</p>
+				<br>
+				<h3 class="text-md-center fluid">ЦІКАВІ ФАКТИ. СИМВОЛІКА ВИШИВАНКИ</h3>
+				<br>
+				<p>* Вишивка хрестиком є найпопулірнішим швом, який застосовують у найрізноманітніших виробах. Наприкінці 19 століття така вишивка поширилася по всій Україні. Елементи орнаменту, які виконувалися хрестиком, найчастіше мали рослинний чи геометричний характер.<br><br>* Сорочка (особливо ж чоловіча) - символ кохання й вірності. У давньому замовлянні сказано: «Якою білою є сорочка на тілі, таким щоб і чоловік до жінки був. У деяких народних піснях, як зауважив О.Потебня, образ не пояснюється, але його можна зрозуміти на основі символічних значень.<br><br>* У другій половині XIX ст. в європейській фольклористиці широко обговорювали сюжет про графа, який потрапив у полон до невірних, і про його дружину. Біла сорочка, дана дружиною чоловікові, — символ вірності: поки сорочка біла, доти жінка вірна. Випрати сорочку в чумацьких піснях означає полюбити чумака, навіть якщо він одружений. Характерно, що не завжди чумак погоджується на любовні стосунки з випадковими особами жіночої статі (в піснях це переважно дівчата або молода шинкарка-здирниця), не дозволяє їм «прати сорочку», хоч вона й не біла, бо «сьома неділя». Таким чином, чумак зберігає вірність коханій дівчині, до якої має повернутися.</p>
+				<p>* Вишивка "білим по білому" - це художній прийом, у якому рельєфний узор вишивки створює гру світла, то вбираючи, то відбиваючи його; поєднуються до десяти технік вишивки, а їх різноманітне сполучення дають безліч вишуканих орнаментальних композицій; філігранна краса узорів досягається використанням наскрізних технік вишивки. Вдивляючись у такі узори, відчуваєш все зовсім по іншому - плин часу, мить зупиняється, душа відпочиває й тільки диву дивуєшся, як можна створювати таку тонку роботу...<br><br></p>
+			</section>
+
+			<footer id="footer" class="footer-area">
+				<div class="footer-top">
+					<div class="container-fluid">
+						<div class="plr-185">
+							<div class="footer-top-inner gray-bg">
+								<div class="row">
+									<div class="col-lg-4 col-md-5 col-sm-4">
+										<div class="single-footer footer-about">
+											<div class="footer-logo">
+
+											</div>
+											<div class="footer-brief">
+												<p>Адреса</p>
+												<p>м.Чернівці, вул. Комарова, 85.</p>
+											</div>
+											<ul class="footer-social">
+												<li>
+													<a class="facebook" href="" title="Facebook"><i class="zmdi zmdi-facebook"></i></a>
+												</li>
+												<li>
+													<a class="google-plus" href="" title="Google Plus"><i class="zmdi zmdi-google-plus"></i></a>
+												</li>
+												<li>
+													<a class="twitter" href="" title="Twitter"><i class="zmdi zmdi-twitter"></i></a>
+												</li>
+												<li>
+													<a class="rss" href="" title="RSS"><i class="zmdi zmdi-rss"></i></a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-lg-2 hidden-md hidden-sm">
+										<div class="single-footer">
+											<h4 class="footer-title border-left">Доставка</h4>
+											<ul class="footer-menu">
+												<li>
+													<a href="#"><i class="zmdi zmdi-circle"></i><span>Нові товари</span></a>
+												</li>
+												<li>
+													<a href="#"><i class="zmdi zmdi-circle"></i><span>Товари зі скидкою</span></a>
+												</li>
+												<li>
+													<a href="#"><i class="zmdi zmdi-circle"></i><span>Топ продаж</span></a>
+												</li>
+												<li>
+													<a href="#"><i class="zmdi zmdi-circle"></i><span>Популярні товари</span></a>
+												</li>
+												<li>
+													<a href="#"><i class="zmdi zmdi-circl"></i><span></span></a>
+												</li>
+												<li>
+													<a href="#"><i class="zmdi zmdi-circl"></i><span></span></a>
+												</li>
+												<li>
+													<a href="#"><i class="zmdi zmdi-circl"></i><span></span></a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-lg-2 col-md-3 col-sm-4">
+										<div class="single-footer">
+											<h4 class="footer-title border-left">Мій аккаунт</h4>
+											<ul class="footer-menu">
+												<li>
+													<a href="my-account.html"><i class="zmdi zmdi-circle"></i><span>Мій аккаунт</span></a>
+												</li>
+												<li>
+													<a href="wishlist.html"><i class="zmdi zmdi-circle"></i><span>Список бажаного</span></a>
+												</li>
+												<li>
+													<a href="cart.html"><i class="zmdi zmdi-circle"></i><span>Корзина</span></a>
+												</li>
+												<li>
+													<a href="login.html"><i class="zmdi zmdi-circle"></i><span>Ввійти</span></a>
+												</li>
+												<li>
+													<a href="login.html"><i class="zmdi zmdi-circle"></i><span>Зареєстуватись</span></a>
+                                            </li><!--
+                                            <li>
+                                                <a href="checkout.html"><i class="zmdi zmdi-circle"></i><span>Check out</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="order.html"><i class="zmdi zmdi-circle"></i><span>Oder Complete</span></a>
+                                              </li>-->
+                                            </ul>
+                                          </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-4">
+                                        	<div class="single-footer">
+                                        		<h4 class="footer-title border-left">Зворотний зв'язок</h4>
+                                        		<div class="footer-message">
+                                        			<form action="#">
+                                        				<input type="text" name="name" placeholder="Ваше ім'я...">
+                                        				<input type="text" name="email" placeholder="Ваш email ...">
+                                        				<textarea class="height-80" name="message" placeholder="Ваше повідомлення..."></textarea>
+                                        				<button class="submit-btn-1 mt-20 btn-hover-1" type="submit">Відправити</button> 
+                                        			</form>
+                                        		</div>
+                                        	</div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="footer-bottom black-bg">
+                              	<div class="container-fluid">
+                              		<div class="plr-185">
+                              			<div class="copyright">
+                              				<div class="row">
+                              					<div class="col-sm-6 col-xs-12">
+                              						<div class="copyright-text">
+                              							Олійник Юрій К-31 2017. All Rights Reserved.</p>
+                              						</div>
+                              					</div>
+                              					<div class="col-sm-6 col-xs-12">
+                              						<ul class="footer-payment text-right">
+                              							<li>
+                              								<a href="#"><img src="img/payment/1.jpg" alt=""></a>
+                              							</li>
+                              							<li>
+                              								<a href="#"><img src="img/payment/2.jpg" alt=""></a>
+                              							</li>
+                              							<li>
+                              								<a href="#"><img src="img/payment/3.jpg" alt=""></a>
+                              							</li>
+                              							<li>
+                              								<a href="#"><img src="img/payment/4.jpg" alt=""></a>
+                              							</li>
+                              						</ul>
+                              					</div>
+                              				</div>
+                              			</div>
+                              		</div>
+                              	</div>
+                              </div>
+                            </footer>
+                            <div id="login">
+                            	<!-- Modal -->
+                            	<div class="modal fade" id="loginModal" tabindex="-1" role="dialog">
+                            		<div class="modal-dialog" role="document">
+                            			<div class="modal-content">
+                            				<div class="modal-header">
+                            					<h2 class="uppercase">Ввійти</h2>
+                            				</div>
+                            				<div class="modal-body">
+                            					<form>
+                            						<div class="form-group">
+                            							<label for="email">Email адреса:</label>
+                            							<input type="email" class="form-control" id="email">
+                            						</div>
+                            						<div class="form-group">
+                            							<label for="pwd">Пароль:</label>
+                            							<input type="password" class="form-control" id="pwd">
+                            						</div>
+                            						<div class="checkbox">
+                            							<label><input type="checkbox"> Запам'ятати</label>
+                            						</div>
+                            						<button type="submit" class="btn btn-default">Ввійти</button>
+                            					</form> 
+                            				</div><!-- .product-info -->
+                            			</div><!-- .modal-product -->
+                            		</div><!-- .modal-body -->
+                            	</div><!-- .modal-content -->
+                            </div><!-- .modal-dialog -->
+                          </div>
+                          <!-- END Modal -->
+
+                          <script>var scr = {"scripts":[
+                          	{"src" : "js/libs.js", "async" : false},
+                          	{"src" : "js/common.js", "async" : false}
+                          	]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+                          </script>
+                          <!-- Load Scripts End -->
+                          
+
+                          <script src="libs/jquery/jquery-1.11.2.min.js"></script>
+                          <script src="js/slick.min.js"></script>
+                          <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+                          <script src="js/main.js"></script>
+                          <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.3/js/bootstrap.min.js" integrity="sha256-AkXNkCuVl4vPqPnlkWUmRGA7fHZFhbqtLgdFlDmJgcw=" crossorigin="anonymous"></script>
+
+
+
+                        </body>
+                        </html>
