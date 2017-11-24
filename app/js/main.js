@@ -20,6 +20,7 @@ $('.active-by-brand').slick({
 	{ breakpoint: 767, settings: { slidesToShow: 1 }  },
 	{ breakpoint: 479, settings: { slidesToShow: 1 }  }
 	]
+<<<<<<< HEAD
 });
 /*------------------------------------
 			4.6 Active Related Product
@@ -55,3 +56,6 @@ $('.active-by-brand').slick({
         }
         $button.parent().find("input").val(newVal);
     });
+=======
+});
+>>>>>>> parent of 7570f10... 2pages
