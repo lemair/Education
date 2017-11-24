@@ -17,7 +17,12 @@ var config = {
 };
 
 gulp.task('browser-sync', ['styles', 'scripts'], function() {
+<<<<<<< HEAD
     browserSync({
+=======
+    var browserSync = require('browser-sync').create();
+    browserSync.init({
+>>>>>>> parent of cdee4fe... maket
         server: {
             baseDir: config.publicDir,
             baseDir: 'app'
@@ -60,4 +65,9 @@ gulp.watch(['src/sass/*.sass', 'src/sass/**/*.sass', 'src/sass/**/*.scss' ], ['s
 gulp.watch(['app/*.html'],browserSync.reload);
 gulp.watch(['app/js/**/*.js'],browserSync.reload);
 });
+<<<<<<< HEAD
 gulp.task('default', ['browser-sync', 'watch']);
+=======
+
+gulp.task('default', ['watch']);
+>>>>>>> parent of cdee4fe... maket

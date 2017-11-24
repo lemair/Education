@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"C:\\Users\\user\\Documents\\GitHub\\Education\\gulpfile.js":{"sha1":"7303dbbbd0ad512dfb328a7ed633e733c1680d81","tasks":{"browser-sync":{"name":"browser-sync","dependencies":"styles scripts"},"scripts":{"name":"scripts","dependencies":""},"styles":{"name":"styles","dependencies":""},"watch":{"name":"watch","dependencies":""},"default":{"name":"default","dependencies":"browser-sync watch"}}}}
+=======
+{"D:\\Git\\Education\\gulpfile.js":{"sha1":"b913e93b1ecf13a551c49fad14b3e98725a5bdc0","tasks":{"browser-sync":{"name":"browser-sync","dependencies":"styles scripts"},"styles":{"name":"styles","dependencies":""},"watch":{"name":"watch","dependencies":""},"default":{"name":"default","dependencies":"watch"}}}}
+>>>>>>> parent of cdee4fe... maket
