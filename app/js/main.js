@@ -22,6 +22,7 @@ $('.active-by-brand').slick({
 	]
 <<<<<<< HEAD
 });
+<<<<<<< HEAD
 /*------------------------------------
 			4.6 Active Related Product
 	-------------------------------------- */
@@ -59,3 +60,5 @@ $('.active-by-brand').slick({
 =======
 });
 >>>>>>> parent of 7570f10... 2pages
+=======
+>>>>>>> parent of 3846db6... common
