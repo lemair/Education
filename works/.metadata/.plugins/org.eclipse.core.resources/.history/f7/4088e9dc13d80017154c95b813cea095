@@ -1,0 +1,10 @@
+package lab3;
+
+public class wordlenght {
+
+	public static void main(String[] args) {
+		String s= new String("довижина слова");
+
+	}
+
+}

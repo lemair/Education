@@ -1,0 +1,21 @@
+package lab3;
+
+import java.util.Scanner;
+
+public class wordlenght {
+
+	public static void main(String[] args) {
+		int word= 5;
+	 Scanner s = new Scanner(System.in);
+	 System.out.println("введіть слово"+word);
+	 String string = s.nextLine();
+	if(string=5 != null){
+		
+		System.out.print("слово на 5 слів");
+	}
+	else {
+		System.out.println("не співпадає");
+	}
+	}
+
+}
